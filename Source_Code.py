@@ -11,7 +11,7 @@ import pandas as pd
 
 
 # `df` is the single working variable. The log lives in its metadata.
-df = pd.read_csv(r"C:\Users\LAKSHYA\Downloads\air_quality_clean.csv")
+df = pd.read_csv("air_quality_clean.csv")
 df.attrs["log"] = [
     f"[49] Loaded air_quality_dirty_dataset.csv: {df.shape[0]} rows x {df.shape[1]} columns",
     "[50] Missing values per column (raw):\n" + df.isna().sum().to_string(),
